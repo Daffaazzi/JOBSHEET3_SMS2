@@ -21,6 +21,7 @@ public class MatakuliahDemo08 {
             jumlahJam = Integer.parseInt(dummy);
             
             arrayMatakuliahDemo08[i] = new Matakuliah08(kode, nama, sks, jumlahJam);
+            System.out.println("-----------------------------");
         }
 
          for (int i = 0; i < 3; i++) {
@@ -30,6 +31,31 @@ public class MatakuliahDemo08 {
             System.out.println("SKS        : " + arrayMatakuliahDemo08[i].sks);
             System.out.println("Jumlah Jam : " + arrayMatakuliahDemo08[i].jumlahJam);
         }
+
+        for (int j = 0; j < 3; j++) {
+            System.out.println("tambah data mata kuliah ke-" + (j + 1) + " : ");
+            System.out.print("Kode       :  ");
+            kode = sc.nextLine();
+            System.out.print("Nama       :  ");
+            nama = sc.nextLine();
+            System.out.print("SKS        :  ");
+            dummy = sc.nextLine();
+            sks = Integer.parseInt(dummy);
+            System.out.print("Jumlah Jam : ");
+            dummy = sc.nextLine();
+            jumlahJam = Integer.parseInt(dummy);
+            arrayMatakuliahDemo08[j].tambahData(kode, nama, sks, jumlahJam);
+
+            System.out.println("---------------------------------");
+
+        }
+
+            for (int j = 0; j < 3; j++) {
+                System.out.println("Data Mata Kuliah Ke-" + (j + 1) + " : ");
+                arrayMatakuliahDemo08[j].cetakData();
+            }
+
+    
 
     }
 }
