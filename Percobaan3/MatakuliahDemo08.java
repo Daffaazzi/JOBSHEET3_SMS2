@@ -24,12 +24,13 @@ public class MatakuliahDemo08 {
             System.out.println("-----------------------------");
         }
 
-         for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Data Mata Kuliah Ke-" + (i + 1) + " : ");
             System.out.println("Kode       : " + arrayMatakuliahDemo08[i].kode);
             System.out.println("Nama       : " + arrayMatakuliahDemo08[i].nama);
             System.out.println("SKS        : " + arrayMatakuliahDemo08[i].sks);
             System.out.println("Jumlah Jam : " + arrayMatakuliahDemo08[i].jumlahJam);
+            System.out.println("---------------------------------");
         }
 
         for (int j = 0; j < 3; j++) {
@@ -50,10 +51,14 @@ public class MatakuliahDemo08 {
 
         }
 
-            for (int j = 0; j < 3; j++) {
-                System.out.println("Data Mata Kuliah Ke-" + (j + 1) + " : ");
-                arrayMatakuliahDemo08[j].cetakData();
-            }
+        System.out.println("Cetak Data Mata Kuliah Setelah Update:");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Mata Kuliah Ke-" + (i + 1) + " : ");
+            arrayMatakuliahDemo08[i].cetakData();
+            System.out.println("---------------------------------");
+        }
+
+        sc.close();
 
     
 
